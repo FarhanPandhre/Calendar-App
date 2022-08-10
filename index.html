@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <!-- sss file link -->
+    <link href="Css/style.css" rel="stylesheet">
+    <!-- css font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body onload="renderDate()" >
+    <!-- overall body of page -->
+   
+    <div class="wrapper" >
+
+        <!-- calendar part -->
+        <div class="calendar">
+
+            <!-- month part -->
+            <div class="month">
+                
+                <div class="prev" onclick="moveDate('prev')">
+                    <span>&#10094</span></div>
+                
+                <div>
+                    <!-- before <h2 id="month">August</h2> -->
+                    <!-- after -->
+                    <h2 id="month"></h2>
+                    <!-- before   <p id="curr-date">Thurs 04 2022</p>-->
+                    <!-- after js code started from static to dynamic -->
+                    <p id="curr-date-navbar"></p>
+                </div>
+                
+                <div class="next" onclick="moveDate('next')">
+                    <span>&#10095</span></div>
+            </div>
+
+            <!-- week part -->
+            <div class="week">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thurs</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+
+
+            <!-- days part -->
+            <div id="days" class="days">
+                <!-- <div class="prev-month-date">31</div> -->
+                <!-- <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div class="today">5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+                <div>19</div>
+                <div>20</div>
+                <div>21</div>
+                <div>22</div>
+                <div>23</div>
+                <div>24</div>
+                <div>25</div>
+                <div>26</div>
+                <div>27</div>
+                <div>28</div>
+                <div>29</div>
+                <div>30</div>
+                <div>31</div> -->
+                <!-- <div class="next-month-date">1</div>
+                <div class="next-month-date">2</div>
+                <div class="next-month-date">3</div> -->
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript link -->
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
+
+<!-- 
+background-color: rgb(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.5);
+box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+border-right: 1px solid rgb(255, 255, 255, 0.2);
+border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+border-radius: 10px;  -->
